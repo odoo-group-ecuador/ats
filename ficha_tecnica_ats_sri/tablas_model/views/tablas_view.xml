@@ -101,14 +101,14 @@
                     view_mode="tree,form" />
 
         <!-- Menu item to open action list -->
-        <menuitem id="menu_finance_ozono"
-                  name="Ozono"
+        <menuitem id="menu_finance_ats"
+                  name="ATS Ficha Tec"
                   parent="account.menu_finance"
                   sequence="30"/>
 
         <menuitem id="menu_codigos"
                   name="Parametros ATS"
-                  parent="menu_finance_ozono"
+                  parent="menu_finance_ats"
                   sequence="5"/>
 
         <menuitem id="menu_tipo_identificacion"
