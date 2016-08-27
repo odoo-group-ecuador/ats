@@ -31,6 +31,7 @@
                                 <field name="x_ret_codigo_documento"/>
                             </group>
                             <group>
+                                <field name="x_ret_fecha_emision" required="True"/>
                                 <field name="x_ret_establecimiento" required="True"/>
                                 <field name="x_ret_punto_emision" required="True"/>
                                 <field name="x_ret_secuencial" required="True"/>
@@ -70,6 +71,7 @@
                                 <field name="x_ret_codigo_documento"/>
                             </group>
                             <group>
+                                <field name="x_ret_fecha_emision"/>
                                 <field name="x_ret_establecimiento"/>
                                 <field name="x_ret_punto_emision"/>
                                 <field name="x_ret_secuencial"/>
