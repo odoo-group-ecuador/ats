@@ -18,6 +18,7 @@ class account_invoice(models.Model):
 #    x_tipo_emision = fields.Char('TIpo de Emisión')
     x_ret_clave_acceso = fields.Char('Clave de Acceso Ret.', required=False)
     x_ret_codigo_documento = fields.Char('Código de Documento - Ret. Elec', required=False)
+    x_ret_fecha_emision = fields.Date('Fecha Retención', required=False)
     x_ret_establecimiento = fields.Char('Establecimiento Ret.', required=False)
     x_ret_punto_emision = fields.Char('Punto de Emisión Ret.', required=False)
     x_ret_secuencial = fields.Char('Secuencial Ret.', required=False)
