@@ -6,7 +6,7 @@
     'version': '1.32beta',
     'category': 'Localization/Account Charts',
     'description': """
-Ficha Técnica del ATS-SRI que incluye los campos para importar facturas electrónicas de Ecuador - odoo-group-ecuador v1.2 (Soporte MULTIUSUARIO) - ESTE MODULO ESTA DESARROLLADO BAJO LICENCIA DE SOFTWARE LIBRE LGPLv3.
+Ficha Técnica del ATS-SRI que incluye los campos para importar facturas electrónicas de Ecuador - odoo-group-ecuador v1.32beta (Soporte MULTIUSUARIO) - ESTE MODULO ESTA DESARROLLADO BAJO LICENCIA DE SOFTWARE LIBRE LGPLv3.
 ==============================================================================
 
 Módulo gratuito, desarrollado por la comunidad de software libre de odoo-group-ecuador
