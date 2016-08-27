@@ -3,7 +3,7 @@
 
 {
     'name': 'Anexo Transacional Simplificado SRI',
-    'version': '1.2',
+    'version': '1.3beta',
     'category': 'Localization/Account Charts',
     'description': """
 Ficha Técnica del ATS-SRI que incluye los campos para importar facturas electrónicas de Ecuador - odoo-group-ecuador v1.2 (Soporte MULTIUSUARIO) - ESTE MODULO ESTA DESARROLLADO BAJO LICENCIA DE SOFTWARE LIBRE LGPLv3.
