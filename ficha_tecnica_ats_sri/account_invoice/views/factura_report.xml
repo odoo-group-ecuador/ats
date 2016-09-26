@@ -27,10 +27,10 @@
             model="account.invoice"
             string="Factura Comercial"
             report_type="qweb-pdf"
-            name="l10n_ec_impresion.factura_simple_template"
-            file="l10n_ec_impresion.factura_simple_template"
+            name="ficha_tecnica_ats_sri.factura_simple_template"
+            file="ficha_tecnica_ats_sri.factura_simple_template"
             attachment_use="False"
-            paperformat="l10n_ec_impresion.paperformat_factura"
+            paperformat="ficha_tecnica_ats_sri.paperformat_factura"
         />
 
 
@@ -38,7 +38,7 @@
         <template id="factura_simple_template">
             <t t-call="report.html_container">
                 <t t-foreach="docs" t-as="o">
-                    <t t-call="l10n_ec_impresion.factura_simple_document" t-lang="o.partner_id.lang"/>
+                    <t t-call="ficha_tecnica_ats_sri.factura_simple_document" t-lang="o.partner_id.lang"/>
                 </t>
             </t>
         </template>
