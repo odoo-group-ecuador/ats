@@ -3,7 +3,7 @@
 
 {
     'name': 'Anexo Transacional Simplificado',
-    'version': '1.33',
+    'version': '1.331',
     'category': 'Localization/Account Charts',
     'description': """
 Ficha Técnica del ATS-SRI Soporte MULTIUSUARIO - ESTE MODULO ESTA DESARROLLADO BAJO LICENCIA DE SOFTWARE LIBRE LGPLv3.
