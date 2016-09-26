@@ -2,6 +2,16 @@
 <openerp>
     <data>
 
+        <record id="view_tree_forma_pago_line" model="ir.ui.view">
+            <field name="name">Forma Pago Line Tree</field>
+            <field name="model">forma.pago.line</field>
+            <field name="arch" type="xml">
+                <tree string="Especifique las Formas de Pago utilizadas" editable="bottom">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
         <record id="invoice_supplier_form_inherited" model="ir.ui.view">
             <field name="name">account.invoice.supplier.form.inherited</field>
             <field name="model">account.invoice</field>
@@ -17,10 +27,10 @@
                                 <field name="x_fac_codigo_documento"/>
                             </group>
                             <group>
-                                <field name="x_fac_establecimiento" required="True"/>
-                                <field name="x_fac_punto_emision" required="True"/>
-                                <field name="x_fac_secuencial" required="True"/>
-                                <field name="x_fac_autorizacion" required="True"/>
+                                <field name="x_partner_establecimiento" required="False"/>
+                                <field name="x_partner_punto_emision" required="False"/>
+                                <field name="x_partner_secuencial" required="False"/>
+                                <field name="x_partner_autorizacion" required="False"/>
                             </group>
                         </group>
                     </page>
@@ -32,12 +42,15 @@
                             </group>
                             <group>
                                 <field name="x_ret_fecha_emision" required="True"/>
-                                <field name="x_ret_establecimiento" required="True"/>
-                                <field name="x_ret_punto_emision" required="True"/>
-                                <field name="x_ret_secuencial" required="True"/>
-                                <field name="x_ret_autorizacion" required="True"/>
+                                <field name="x_company_establecimiento" required="False"/>
+                                <field name="x_company_emision" required="False"/>
+                                <field name="x_company_secuencial" required="False"/>
+                                <field name="x_company_autorizacion" required="False"/>
                             </group>
                         </group>
+                    </page>
+                    <page string="Forma de Cobro">
+                        <field name="x_forma_pago_id"/>
                     </page>
                 </xpath>
             </field>
@@ -57,10 +70,10 @@
                                 <field name="x_fac_codigo_documento"/>
                             </group>
                             <group>
-                                <field name="x_fac_establecimiento" required="True"/>
-                                <field name="x_fac_punto_emision" required="True"/>
-                                <field name="x_fac_secuencial" required="True"/>
-                                <field name="x_fac_autorizacion" required="True"/>
+                                <field name="x_company_establecimiento" required="False" readonly="1"/>
+                                <field name="x_company_emision" required="False" readonly="1"/>
+                                <field name="x_company_secuencial" required="False" readonly="1"/>
+                                <field name="x_company_autorizacion" required="False"/>
                             </group>
                         </group>
                     </page>
@@ -72,12 +85,15 @@
                             </group>
                             <group>
                                 <field name="x_ret_fecha_emision"/>
-                                <field name="x_ret_establecimiento"/>
-                                <field name="x_ret_punto_emision"/>
-                                <field name="x_ret_secuencial"/>
-                                <field name="x_ret_autorizacion"/>
+                                <field name="x_partner_establecimiento"/>
+                                <field name="x_partner_punto_emision"/>
+                                <field name="x_partner_secuencial"/>
+                                <field name="x_partner_autorizacion"/>
                             </group>
                         </group>
+                    </page>
+                    <page string="Forma de Pago">
+                        <field name="x_forma_pago_id"/>
                     </page>
                 </xpath>
             </field>

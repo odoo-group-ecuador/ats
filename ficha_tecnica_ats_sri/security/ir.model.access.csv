@@ -5,3 +5,5 @@ access_tipo_comprobante_group_user,tipo.comprobante.user,model_tipo_comprobante,
 access_tipo_transaccion_group_user,tipo.transaccion.user,model_tipo_transaccion,base.group_user,1,1,1,1
 access_identificacion_referencial_group_user,identificacion.referencial.user,model_identificacion_referencial,base.group_user,1,1,1,1
 access_codigo_retencion_group_user,codigo.retencion.user,model_codigo_retencion,base.group_user,1,1,1,1
+access_forma_pago_group_user,forma.pago.user,model_forma_pago,base.group_user,1,1,1,1
+access_forma_pago_line_group_user,forma.pago.line.user,model_forma_pago_line,base.group_user,1,1,1,1
