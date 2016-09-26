@@ -69,6 +69,17 @@
             </field>
         </record>
 
+        <record id="view_tree_forma_pago" model="ir.ui.view">
+            <field name="name">Pago Tree</field>
+            <field name="model">forma.pago</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
         <!-- Action to open menu list -->
         <act_window id="action_tipo_identificacion"
                     name="Tipo de Identificación"
@@ -98,6 +109,11 @@
         <act_window id="action_codigo_retencion"
                     name="Códigos de Retenciones"
                     res_model="codigo.retencion"
+                    view_mode="tree,form" />
+
+        <act_window id="action_forma_pago"
+                    name="Forma de Pago"
+                    res_model="forma.pago"
                     view_mode="tree,form" />
 
         <!-- Menu item to open action list -->
@@ -146,6 +162,12 @@
                   parent="menu_codigos"
                   sequence="50"
                   action="action_codigo_retencion" />
+
+        <menuitem id="menu_forma_pago"
+                  name="Forma de Pago"
+                  parent="menu_codigos"
+                  sequence="70"
+                  action="action_forma_pago" />
 
     </data>
 </openerp>

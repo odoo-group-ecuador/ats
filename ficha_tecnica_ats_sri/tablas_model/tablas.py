@@ -104,3 +104,19 @@ class CodigoRetencion(models.Model):
                 name = name + ' - ' + record.description
             result.append((record.id, name))
         return result
+
+class FormaPago(models.Model):
+    _name = 'forma.pago'
+    name = fields.Char('Código', required=True)
+    description = fields.Char('Forma de Pago', required=True)
+
+    @api.multi
+    @api.depends('name', 'description')
+    def name_get(self):
+        result = []
+        for record in self:
+            name = record.name
+            if record.description:
+                name = name + ' - ' + record.description
+            result.append((record.id, name))
+        return result
